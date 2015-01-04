@@ -1,0 +1,272 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DidotLH-Italic
+FamilyName:Linotype Didot
+StyleName:Italic
+MenuName:Didot LH Roman
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Linotype Didot Italic
+WritingScript:Roman
+OutlineFileName:\DidotLHIta
+DataFormat:POSTResource
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:34354
+FileModTime:711651766
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DidotLH-Roman
+FamilyName:Linotype Didot
+StyleName:Roman
+MenuName:Didot LH Roman
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Linotype Didot Roman
+WritingScript:Roman
+OutlineFileName:\DidotLHRom
+DataFormat:POSTResource
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:34432
+FileModTime:711651718
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FuturaStd-Book
+FamilyName:Futura Std
+StyleName:Book
+MenuName:Futura Std Book
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Futura Std Book
+WritingScript:Roman
+OutlineFileName:\FuturaStd-Book.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:27972
+FileModTime:1392288252
+DesignSize:120
+NameArray:0,Mac,4,Futura Std Book
+NameArray:0,Win,1,Futura Std Book
+NameArray:0,Win,16,Futura Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Roman
+OutlineFileName:\Linotype Didot
+ResourceID:13495
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Bold
+OutlineFileName:\Linotype Didot
+ResourceID:13495
+MacStyle:1
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Italic
+OutlineFileName:\Linotype Didot
+ResourceID:13495
+MacStyle:2
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Bold
+OutlineFileName:\Linotype Didot
+ResourceID:13499
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Italic
+OutlineFileName:\Linotype Didot
+ResourceID:13497
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-RomanOsF
+OutlineFileName:\Linotype Didot
+ResourceID:13502
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-BoldOsF
+OutlineFileName:\Linotype Didot
+ResourceID:13502
+MacStyle:1
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-ItalicOsF
+OutlineFileName:\Linotype Didot
+ResourceID:13502
+MacStyle:2
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-BoldOsF
+OutlineFileName:\Linotype Didot
+ResourceID:13500
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-ItalicOsF
+OutlineFileName:\Linotype Didot
+ResourceID:13498
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-RomanSC
+OutlineFileName:\Linotype Didot
+ResourceID:13496
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Headline
+OutlineFileName:\Linotype Didot
+ResourceID:13501
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-HeadlineOsF
+OutlineFileName:\Linotype Didot
+ResourceID:13544
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-OrnamentsOne
+OutlineFileName:\Linotype Didot
+ResourceID:13503
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-OrnamentsTwo
+OutlineFileName:\Linotype Didot
+ResourceID:13540
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:DidotLH-Initials
+OutlineFileName:\Linotype Didot
+ResourceID:13542
+MacStyle:0
+FileLength:280609
+FileModTime:947514622
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SangBleuBPSans-Condensed
+FamilyName:SangBleu BP Sans
+StyleName:Condensed
+MenuName:SangBleu BP Sans Condensed
+StyleBits:0
+WeightClass:300
+WidthClass:3
+AngleClass:0
+FullName:SangBleu BP Sans Condensed
+WritingScript:Roman
+OutlineFileName:\SangBleuBPSans-Condensed.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:21868
+FileModTime:1367467818
+NameArray:0,Mac,4,SangBleu BP Sans Condensed
+NameArray:0,Win,1,SangBleu BP Sans Condensed
+NameArray:0,Win,16,SangBleu BP Sans
+%EndFont
+
