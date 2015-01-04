@@ -1,0 +1,37 @@
+{
+  "name": "stevetheme",
+  "version": "0.0.1",
+  "description": "wordpress theme based on html5-blank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seafoam6/stevetheme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "child",
+    "theme"
+  ],
+  "author": "Steve Barman",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/seafoam6/stevetheme/issues"
+  },
+  "homepage": "https://github.com/seafoam6/stevetheme",
+  "devDependencies": {
+    "gulp": "~3.8.8",
+    "gulp-rename": "~1.2.0",
+    "gulp-concat": "~2.4.1",
+    "gulp-uglify": "~1.0.1",
+    "gulp-jshint": "~1.8.5",
+    "gulp-sass": "~1.0.0",
+    "gulp-livereload": "~2.1.1",
+    "gulp-sourcemaps": "~1.2.2",
+    "gulp-autoprefixer": "~1.0.1",
+    "gulp-ruby-sass": "~0.7.1",
+    "gulp-minify-css": "~0.3.10"
+  }
+}
