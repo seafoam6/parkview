@@ -28,7 +28,7 @@
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding overhang">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="images/logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/parkview-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a>
 			
 		</div><!-- .site-branding -->
 

@@ -24,7 +24,7 @@ gulp.task('sass', function() {
         .pipe(sass({style:'expanded'}))
         .pipe(autoprefixer('last 2 version'))
         //.pipe(rename({suffix:'.min'}))
-        .pipe(minifycss())
+        //.pipe(minifycss())
         .pipe(gulp.dest(''));
 });
 
