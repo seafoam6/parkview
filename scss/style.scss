@@ -107,6 +107,101 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 @import "media/media";
 
+*,
+*:before,
+*:after{
+  background-repeat:no-repeat;
+}
 body{
   background:#fff;
+}
+.main-navigation{
+  position: relative;
+  z-index: 10;
+}
+.overhang{
+  z-index: 2;
+position: relative;
+}
+.site-branding img{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.hero{
+  max-width:1980px;
+  margin:0 auto;
+  position:relative;
+  padding:{
+    top:120px;
+  }
+  background:{
+    size:auto, cover;
+    image:url(images/logo-trans.png),
+          url(images/hero-1.jpg);
+    position:center bottom -7px, 
+             center center;
+    }
+  height:968px;
+}
+.issue-number{
+  margin:0px auto 20px;
+  width:300px;
+  height:350px;
+  background:{
+    image:url(images/issue-1.jpg);
+    position:center center;
+  }
+}
+.availablity{
+  display:block;
+  width:300px;
+  background-color:rgba(#fff,0.8);
+  line-height:50px;
+  text-align:center;
+  margin:0 auto;
+  text-transform: uppercase;
+}
+.overlay-title{
+  background:{
+    //image:url(images/logo-trans.png);
+  }
+  width:1270px;
+  height:301px;
+  max-width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom:17px;
+}
+.off-screen{
+  text-indent: -100%;
+  overflow: hidden;
+  display:block;
+}
+.overlay-title,
+.availablity,
+.namesake{
+  font-family:$didot-roman;
+}
+#main > section{
+  max-width:982px;
+  margin:0 auto;
+}
+.section-head{
+  background:{
+    image:url(images/heading-bg.png);
+    repeat:repeat-x;
+  }
+  height:38px;
+  width:100%;
+  line-height:38px;
+  text-transform: uppercase;
+  text-align: center;
+  color:#050606;
+  font-size:16px;
 }

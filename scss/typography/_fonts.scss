@@ -9,3 +9,16 @@
   font-style:   normal;
   font-weight:  400;
 }
+@font-face {
+  font-family: 'Linotype Didot';
+  src: url('fonts/DidotLH-Roman.eot'); /* IE9 Compat Modes */
+  src: url('fonts/DidotLH-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/DidotLH-Roman.woff') format('woff'), /* Modern Browsers */
+       url('fonts/DidotLH-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/DidotLH-Roman.svg#8f4f29dacde2cc9e66964c1e29c48804') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+$didot-roman:'Linotype Didot', serif;

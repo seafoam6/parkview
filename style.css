@@ -187,6 +187,15 @@ big {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: 'Linotype Didot';
+  src: url('fonts/DidotLH-Roman.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/DidotLH-Roman.eot?#iefix') format('embedded-opentype'), url('fonts/DidotLH-Roman.woff') format('woff'), url('fonts/DidotLH-Roman.ttf') format('truetype'), url('fonts/DidotLH-Roman.svg#8f4f29dacde2cc9e66964c1e29c48804') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -342,7 +351,7 @@ a {
     display: inline-block;
     padding: 0 10px;
     color: #050606;
-    line-height: 52px;
+    line-height: 57px;
     font-family: 'Futura Std Book', sans-serif; }
 
 /*--------------------------------------------------------------
@@ -534,5 +543,83 @@ embed, iframe, object {
 .gallery-caption {
   display: block; }
 
+*, *:before, *:after {
+  background-repeat: no-repeat; }
+
 body {
   background: #fff; }
+
+.main-navigation {
+  position: relative;
+  z-index: 10; }
+
+.overhang {
+  z-index: 2;
+  position: relative; }
+
+.site-branding img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+
+.hero {
+  max-width: 1980px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 120px;
+  background-size: auto, cover;
+  background-image: url(images/logo-trans.png), url(images/hero-1.jpg);
+  background-position: center bottom -7px, center center;
+  height: 968px; }
+
+.issue-number {
+  margin: 0px auto 20px;
+  width: 300px;
+  height: 350px;
+  background-image: url(images/issue-1.jpg);
+  background-position: center center; }
+
+.availablity {
+  display: block;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase; }
+
+.overlay-title {
+  width: 1270px;
+  height: 301px;
+  max-width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 17px; }
+
+.off-screen {
+  text-indent: -100%;
+  overflow: hidden;
+  display: block; }
+
+.overlay-title, .availablity, .namesake {
+  font-family: 'Linotype Didot', serif; }
+
+#main > section {
+  max-width: 982px;
+  margin: 0 auto; }
+
+.section-head {
+  background-image: url(images/heading-bg.png);
+  background-repeat: repeat-x;
+  height: 38px;
+  width: 100%;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #050606;
+  font-size: 16px; }
