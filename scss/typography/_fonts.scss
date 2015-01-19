@@ -20,5 +20,16 @@
   font-style:   normal;
   font-weight:  400;
 }
+@font-face {
+  font-family: 'Linotype Didot';
+  src: url('fonts/ufonts.com_didot-italic.eot'); /* IE9 Compat Modes */
+  src: url('fonts/ufonts.com_didot-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ufonts.com_didot-italic.woff') format('woff'), /* Modern Browsers */
+       url('fonts/ufonts.com_didot-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/ufonts.com_didot-italic.svg#2f5e15e8bfc5cb886704ec743dae97fb') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
 
 $didot-roman:'Linotype Didot', serif;

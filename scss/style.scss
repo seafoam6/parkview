@@ -183,10 +183,21 @@ position: relative;
   overflow: hidden;
   display:block;
 }
+
 .overlay-title,
 .availablity,
 .namesake{
   font-family:$didot-roman;
+}
+#about p{
+  font-family: $didot-roman;
+  font-style:italic;
+  font-size: 22px;
+  line-height: 28px;
+  .namesake{
+    text-transform: uppercase;
+    font-style: normal;
+  }
 }
 #main > section{
   max-width:982px;

@@ -196,6 +196,15 @@ big {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: 'Linotype Didot';
+  src: url('fonts/ufonts.com_didot-italic.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/ufonts.com_didot-italic.eot?#iefix') format('embedded-opentype'), url('fonts/ufonts.com_didot-italic.woff') format('woff'), url('fonts/ufonts.com_didot-italic.ttf') format('truetype'), url('fonts/ufonts.com_didot-italic.svg#2f5e15e8bfc5cb886704ec743dae97fb') format('svg');
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400; }
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -608,6 +617,15 @@ body {
 
 .overlay-title, .availablity, .namesake {
   font-family: 'Linotype Didot', serif; }
+
+#about p {
+  font-family: 'Linotype Didot', serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 28px; }
+  #about p .namesake {
+    text-transform: uppercase;
+    font-style: normal; }
 
 #main > section {
   max-width: 982px;
