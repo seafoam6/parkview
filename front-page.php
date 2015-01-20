@@ -8,6 +8,10 @@
 
 get_header(); ?>
 	<div class="hero">
+	<div class="slide slide-1"></div>
+	<div class="slide slide-2"></div>
+	<div class="slide slide-3"></div>
+	<div class="slide slide-4"></div>
 	  <div class="issue-number"></div>
 	  <div class="availablity">Available Now</div>
 	</div>
@@ -15,7 +19,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section id="about" class="about">
 		    <h2 class="section-head">About</h2>
-		    <img class="leaf-flourish" src="leaf.png">
+		    <img class="leaf-flourish" src="<?php bloginfo('template_directory'); ?>/images/copy-florish.jpg">
 		    <p><span class="namesake">PARKVIEW MAGAZINE</span> is a collection of life’s allure through a showcase of design, entertaining, awesome and inspiring people, shared experiences, and spaces. We capture how individual taste is cultivated through living and common spaces and encourage sharing life’s profound moments in them. Not so much of a keeping up with the trends type of read, but more of a cultured visual and reading experience that embraces and influences a lifestyle, <span class="namesake">PARKVIEW MAGAZINE</span> is a reference for inspiration and cunning perspective on external environments. Our dialogue with some of the most intriguing human beings around, in some of the most aesthetically and functionally pleasing areas we can find, <span class="namesake">PARKVIEW MAGAZINE</span> is captivating in its own right, submerging the reader into the glory of each page.</p>
 		  </section>
 		  <section>
