@@ -152,6 +152,10 @@ position: relative;
   height:968px;
   position:absolute;
   top:0;
+  opacity:0;
+  &.active{
+    opacity:1;
+  }
 }
 .slide-1{
   background:{
@@ -259,5 +263,4 @@ position: relative;
 .leaf-flourish{
   float:right;
   position:relative;
-
 }

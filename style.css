@@ -588,7 +588,10 @@ body {
   background-position: center bottom -7px, center center;
   height: 968px;
   position: absolute;
-  top: 0; }
+  top: 0;
+  opacity: 0; }
+  .slide.active {
+    opacity: 1; }
 
 .slide-1 {
   background-size: auto, cover;
