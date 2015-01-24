@@ -577,9 +577,14 @@ body {
   max-width: 1980px;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
   padding-top: 120px;
   max-width: 1980px;
   height: 968px; }
+
+.slides {
+  position: relative;
+  z-index: 2; }
 
 .slide {
   width: 100%;
@@ -588,10 +593,7 @@ body {
   background-position: center bottom -7px, center center;
   height: 968px;
   position: absolute;
-  top: 0;
-  opacity: 0; }
-  .slide.active {
-    opacity: 1; }
+  top: 0; }
 
 .slide-1 {
   background-size: auto, cover;
@@ -617,11 +619,15 @@ body {
   margin: 0px auto 20px;
   width: 300px;
   height: 350px;
+  z-index: 5;
+  position: relative;
   background-image: url(images/issue-1.jpg);
   background-position: center center; }
 
 .availablity {
   display: block;
+  z-index: 5;
+  position: relative;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   line-height: 50px;

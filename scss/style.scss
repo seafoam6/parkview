@@ -134,11 +134,16 @@ position: relative;
   max-width:1980px;
   margin:0 auto;
   position:relative;
+  z-index: 1;
   padding:{
     top:120px;
   }
   max-width:1980px;
   height:968px;
+}
+.slides{
+  position: relative;
+  z-index: 2;
 }
 .slide{
   width:100%;
@@ -152,10 +157,8 @@ position: relative;
   height:968px;
   position:absolute;
   top:0;
-  opacity:0;
-  &.active{
-    opacity:1;
-  }
+  //opacity:0;
+  //display:none;
 }
 .slide-1{
   background:{
@@ -197,6 +200,8 @@ position: relative;
   margin:0px auto 20px;
   width:300px;
   height:350px;
+  z-index: 5;
+  position: relative;
   background:{
     image:url(images/issue-1.jpg);
     position:center center;
@@ -204,6 +209,8 @@ position: relative;
 }
 .availablity{
   display:block;
+  z-index: 5;
+  position: relative;
   width:300px;
   background-color:rgba(#fff,0.8);
   line-height:50px;

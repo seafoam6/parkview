@@ -8,10 +8,12 @@
 
 get_header(); ?>
 	<div class="hero">
-	<div class="slide slide-1"></div>
-	<div class="slide slide-2"></div>
-	<div class="slide slide-3"></div>
-	<div class="slide slide-4"></div>
+	<div class="slides">
+		<div class="slide slide-1"></div>
+		<div class="slide slide-2"></div>
+		<div class="slide slide-3"></div>
+		<div class="slide slide-4"></div>
+		</div>
 	  <div class="issue-number"></div>
 	  <div class="availablity">Available Now</div>
 	</div>
