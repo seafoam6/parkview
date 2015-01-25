@@ -1,5 +1,5 @@
+(function(){
 jQuery(document).ready(function($) {
-
     var slides = $('.hero .slide');
     var totalSlides = slides.length -1, currentSlide=0;
     var hideOthers =function(){
@@ -25,8 +25,6 @@ jQuery(document).ready(function($) {
     setInterval(function(){
       changeSlide();
      //$(slides[1]).fadeIn(500);
-
-    },5000);
-
-    
+    },5000);  
 });
+})();

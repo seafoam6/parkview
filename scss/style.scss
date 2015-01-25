@@ -135,9 +135,6 @@ position: relative;
   margin:0 auto;
   position:relative;
   z-index: 1;
-  padding:{
-    top:120px;
-  }
   max-width:1980px;
   height:968px;
 }
@@ -201,6 +198,7 @@ position: relative;
   width:300px;
   height:350px;
   z-index: 5;
+  top:106px;
   position: relative;
   background:{
     image:url(images/issue-1.jpg);
@@ -217,6 +215,7 @@ position: relative;
   text-align:center;
   margin:0 auto;
   text-transform: uppercase;
+  top:106px;
 }
 .overlay-title{
   width:1270px;
@@ -252,7 +251,7 @@ position: relative;
 }
 #main > section{
   max-width:982px;
-  margin:0 auto;
+  margin:35px auto;
 }
 .section-head{
   background:{
@@ -266,8 +265,71 @@ position: relative;
   text-align: center;
   color:#050606;
   font-size:16px;
+  margin-bottom:35px;
 }
 .leaf-flourish{
   float:right;
+  padding: 20px 0px 0;
+  position: relative;
+  left: 11px;
+}
+.contact-info{
+  font-family: $didot-roman;
+  font-style:italic;
+  font-size:22px;
+  line-height:28px;
+  text-align:center;
   position:relative;
+  .name{
+    position:relative;
+  &:before{
+      position:absolute;
+      content:"";
+      background:{
+        image:url(images/author-florish.jpg);
+      }
+      height:30px;
+      width:30px;
+
+      left: -42px;
+top: -12px;
+    }
+  } 
+  a:link,
+  a:hover,
+  a:visited,
+  a:target{
+    color:inherit;
+    text-decoration: none;
+  }
+}
+.foot-florish{
+  display:block;
+  margin:0 auto;
+}
+.site-footer{
+  margin-bottom:94px;
+}
+.social-share{
+  display: table;
+margin: 0 auto;
+  li{
+    list-style:none;
+    float:left;
+  }
+  a{
+    display:block;
+    height:22px;
+    width:22px;
+    margin:0 40px;
+    background:{
+      image:url(images/social.jpg);
+    }
+    &.instagram{
+      background-position: right -5px top;
+    }
+    &.facebook{
+      background-position: left -50px top;
+    }
+  }
 }

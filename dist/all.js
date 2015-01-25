@@ -6074,8 +6074,8 @@
 	};
 } )();
 
+(function(){
 jQuery(document).ready(function($) {
-
     var slides = $('.hero .slide');
     var totalSlides = slides.length -1, currentSlide=0;
     var hideOthers =function(){
@@ -6101,12 +6101,9 @@ jQuery(document).ready(function($) {
     setInterval(function(){
       changeSlide();
      //$(slides[1]).fadeIn(500);
-
-    },5000);
-
-    
+    },5000);  
 });
-
+})();
 ( function() {
 	var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
 	    is_opera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,

@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<img class="foot-florish" src="florish.jpg">
+		<a href="#"><img class="foot-florish" src="<?php bloginfo('template_directory'); ?>/images/footer-florish.jpg"></a>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

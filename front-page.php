@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="slide slide-2"></div>
 		<div class="slide slide-3"></div>
 		<div class="slide slide-4"></div>
-		</div>
+	</div>
 	  <div class="issue-number"></div>
 	  <div class="availablity">Available Now</div>
 	</div>
@@ -24,23 +24,24 @@ get_header(); ?>
 		    <img class="leaf-flourish" src="<?php bloginfo('template_directory'); ?>/images/copy-florish.jpg">
 		    <p><span class="namesake">PARKVIEW MAGAZINE</span> is a collection of life’s allure through a showcase of design, entertaining, awesome and inspiring people, shared experiences, and spaces. We capture how individual taste is cultivated through living and common spaces and encourage sharing life’s profound moments in them. Not so much of a keeping up with the trends type of read, but more of a cultured visual and reading experience that embraces and influences a lifestyle, <span class="namesake">PARKVIEW MAGAZINE</span> is a reference for inspiration and cunning perspective on external environments. Our dialogue with some of the most intriguing human beings around, in some of the most aesthetically and functionally pleasing areas we can find, <span class="namesake">PARKVIEW MAGAZINE</span> is captivating in its own right, submerging the reader into the glory of each page.</p>
 		  </section>
-		  <section>
+		  <section id="issues">
 		    <h2 class="section-head">Issues</h2>
 		    <div class="issue">
-		      <img src="cover1.jpg">
-		      <div class="issue-desc">
-		        <span class="date">January 2015</span>
-		        <span class="buyit">Buy It Here</span>
-		      </div>
+		      <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/issue-thumb-01.jpg" alt="buy parkview issue 1 here">
+					</a>
 		    </div>
 		  </section>
-		  <section>
+		  <section id="contact">
 		    <h2 class="section-head">Contact</h2>
-		    <div class="contact-info">Ashley K. Parks<br><a href="mailto:ashkparks@gmail.com">ashkparks@gmail.com</a>
+		    <div class="contact-info"><span class="name">Ashley K. Parks</span><br><a href="mailto:ashkparks@gmail.com">ashkparks@gmail.com</a>
 		  </section>
-		  <section>
+		  <section id="buy">
 		    <h2 class="section-head">Connect with us</h2>
-		    <ul class="social-share"></ul>
+		    <ul class="social-share clearfix">
+		    	<li><a class="instagram" href="http://instagram.com/parkviewmag/"></a></li>
+		    	<li><a class="facebook" href="http://facebook.com/ParkviewMag"></a></li>
+		    	<li><a class="twitter" href="http://twitter.com/ParkviewMag"></a></li>
+		    </ul>
 		  </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
