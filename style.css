@@ -730,3 +730,6 @@ body {
       background-position: right -5px top; }
     .social-share a.facebook {
       background-position: left -50px top; }
+
+*:focus {
+  outline: 0; }
