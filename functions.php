@@ -146,3 +146,22 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+/** Step 2 (from text above). */
+add_action( 'admin_menu', 'parkview_options_menu' );
+
+/** Step 1. */
+function parkview_options_menu() {
+	add_menu_page( 'Parkview Theme Options', 'Parkview Options', 'manage_options', 'parkview-options', 'parkview_theme_options' );
+}
+
+/** Step 3. */
+function parkview_theme_options() {
+	if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+	include 'theme-options.php';
+}
+
