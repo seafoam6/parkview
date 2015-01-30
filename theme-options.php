@@ -1,3 +1,8 @@
 <?php
+?>
+<h1>Parkview Options Page</h1>
+<?php
+$aboutBlurbDefault= "Smith";
 
-echo "steve is cool";
+get_option('parkview_aboutBlurb', $aboutBlurbDefault); 
+?>
