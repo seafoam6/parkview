@@ -205,11 +205,26 @@ function optionsframework_options() {
 	// 	'class' => 'hidden',
 	// 	'type' => 'text');
 
-	// $options[] = array(
-	// 	'name' => __('Uploader Test', 'options_check'),
-	// 	'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
-	// 	'id' => 'example_uploader',
-	// 	'type' => 'upload');
+	$options[] = array(
+		'name' => __('Slider Image 1', 'options_check'),
+		'desc' => __('Image size should be 1920 wide by 968 tall', 'options_check'),
+		'id' => 'slide1',
+		'type' => 'upload');
+	$options[] = array(
+		'name' => __('Slider Image 2', 'options_check'),
+		'desc' => __('Image size should be 1920 wide by 968 tall', 'options_check'),
+		'id' => 'slide2',
+		'type' => 'upload');
+	$options[] = array(
+		'name' => __('Slider Image 3', 'options_check'),
+		'desc' => __('Image size should be 1920 wide by 968 tall', 'options_check'),
+		'id' => 'slide3',
+		'type' => 'upload');
+	$options[] = array(
+		'name' => __('Slider Image 4', 'options_check'),
+		'desc' => __('Image size should be 1920 wide by 968 tall', 'options_check'),
+		'id' => 'slide4',
+		'type' => 'upload');
 
 	// $options[] = array(
 	// 	'name' => "Example Image Selector",

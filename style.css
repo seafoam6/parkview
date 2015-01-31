@@ -693,16 +693,6 @@ body {
   line-height: 28px;
   text-align: center;
   position: relative; }
-  .contact-info .name {
-    position: relative; }
-    .contact-info .name:before {
-      position: absolute;
-      content: "";
-      background-image: url(images/author-florish.jpg);
-      height: 30px;
-      width: 30px;
-      left: -42px;
-      top: -12px; }
   .contact-info a:link, .contact-info a:hover, .contact-info a:visited, .contact-info a:target {
     color: inherit;
     text-decoration: none; }
