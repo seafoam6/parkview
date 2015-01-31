@@ -1,11 +1,17 @@
 (function(){
+  $=jQuery;
 jQuery(document).ready(function($) {
-    var slides = $('.hero .slide');
-    var totalSlides = slides.length -1, currentSlide=0;
-    var hideOthers =function(){
-      $(slides[currentSlide]).siblings().hide();
-    };
+  //slider
+    var slides = $('.hero .slide'),
+        slideTime = 5000,
+        totalSlides = slides.length -1, 
+        currentSlide=0,
+        hideOthers =function(){
+          $(slides[currentSlide]).siblings().hide();
+        };
+
     hideOthers();
+
     var incrementSlide = function(){
       if (currentSlide < totalSlides){
         currentSlide++;
@@ -25,6 +31,26 @@ jQuery(document).ready(function($) {
     setInterval(function(){
       changeSlide();
      //$(slides[1]).fadeIn(500);
-    },5000);  
+    },slideTime);  
+
+    //about section
+
+    
+    
+});
+})();
+
+
+(function(){
+  $=jQuery;
+jQuery(document).ready(function($) {
+var re = /Parkview Magazine/gi;
+    var str = $('#about').html();
+    
+    var switchTo = '<span class=\"namesake\">Pakview Magazine</span>';
+
+    var newText = str.replace(re,switchTo );
+
+    $('#about').html(newText);
 });
 })();

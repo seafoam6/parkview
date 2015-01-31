@@ -280,21 +280,7 @@ position: relative;
   line-height:28px;
   text-align:center;
   position:relative;
-  .name{
-    position:relative;
-  &:before{
-      position:absolute;
-      content:"";
-      background:{
-        image:url(images/author-florish.jpg);
-      }
-      height:30px;
-      width:30px;
-
-      left: -42px;
-top: -12px;
-    }
-  } 
+  
   a:link,
   a:hover,
   a:visited,
