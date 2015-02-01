@@ -11,28 +11,38 @@ get_header(); ?>
 	<div class="slides">
 
 	<?php 
-	$tery = bloginfo('template_directory');
-	$slide1=of_get_option('slide1', 'no entry');
+
+	$slide1= of_get_option('slide1', 'no entry');
+	$slide2= of_get_option('slide2', 'no entry');
+	$slide3= of_get_option('slide3', 'no entry');
+	$slide4= of_get_option('slide4', 'no entry');
 
 	if (of_get_option('slide1', 'no entry') != ""){
-		echo "<div class=\"slide slide-1\" style=\"background-image:url(".
-			$tery
-			."/images/logo-trans.png), url(".$slide1 
+		echo "<div class=\"slide slide-1\" style=\"background-image:url(".$slide1 
 			.");\"></div>";
 	}
 	if (of_get_option('slide2', 'no entry') != ""){
-		echo "<div class=\"slide slide-2\" style=\"background-image: url(<?php echo of_get_option('slide2', 'no entry'); ?>);\"></div>";
+		echo "<div class=\"slide slide-2\" style=\"background-image:url(".$slide2 
+			.");\"></div>";
 	}
 	if (of_get_option('slide3', 'no entry') != ""){
-		echo "<div class=\"slide slide-3\" style=\"background-image: url(<?php echo of_get_option('slide3', 'no entry'); ?>);\"></div>";
+		echo "<div class=\"slide slide-3\" style=\"background-image:url(".$slide3 
+			.");\"></div>";
 	}
 	if (of_get_option('slide4', 'no entry') != ""){
-		echo "<div class=\"slide slide-4\" style=\"background-image: url(<?php echo of_get_option('slide4', 'no entry'); ?>);\"></div>";
+		echo "<div class=\"slide slide-4\" style=\"background-image:url(".$slide4 
+			.");\"></div>";
 	}
 
-	?></div>
+
+
+	?></div><!--slides-->
+
 	  <div class="issue-number"></div>
 	  <div class="availablity">Available Now</div>
+	  <div class="name-wrap">
+	  	<img src="<?php bloginfo('template_directory');?>/images/logo-trans.png">
+	  	</div>
 	</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

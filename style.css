@@ -588,31 +588,26 @@ body {
 .slide {
   width: 100%;
   background-size: auto, cover;
-  background-image: url(images/logo-trans.png), url(images/hero-1.jpg);
   background-position: center bottom -7px, center center;
   height: 968px;
   position: absolute;
   top: 0; }
+  .slide:after {
+    width: 467px;
+    height: 141px;
+    position: relative;
+    bottom: 0;
+    content: "";
+    background-image: url(images/logo-trans.png); }
 
-.slide-1 {
-  background-size: auto, cover;
-  background-image: url(images/logo-trans.png), url(images/hero-1.jpg);
-  background-position: center bottom -7px, center center; }
-
-.slide-2 {
-  background-size: auto, cover;
-  background-image: url(images/logo-trans.png), url(images/hero-2.jpg);
-  background-position: center bottom -7px, center center; }
-
-.slide-3 {
-  background-size: auto, cover;
-  background-image: url(images/logo-trans.png), url(images/hero-3.jpg);
-  background-position: center bottom -7px, center center; }
-
-.slide-4 {
-  background-size: auto, cover;
-  background-image: url(images/logo-trans.png), url(images/hero-4.jpg);
-  background-position: center bottom -7px, center center; }
+.name-wrap {
+  position: absolute;
+  bottom: -7px;
+  z-index: 20;
+  width: 100%; }
+  .name-wrap img {
+    margin: 0 auto;
+    display: table; }
 
 .issue-number {
   margin: 0px auto 20px;
