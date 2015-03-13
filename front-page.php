@@ -12,31 +12,30 @@ get_header(); ?>
 
 	<?php 
 
-	$slide1= of_get_option('slide1', 'no entry');
-	$slide2= of_get_option('slide2', 'no entry');
-	$slide3= of_get_option('slide3', 'no entry');
-	$slide4= of_get_option('slide4', 'no entry');
+	// $slide1= of_get_option('slide1', 'no entry');
+	// $slide2= of_get_option('slide2', 'no entry');
+	// $slide3= of_get_option('slide3', 'no entry');
+	// $slide4= of_get_option('slide4', 'no entry');
 
-	if (of_get_option('slide1', 'no entry') != ""){
-		echo "<div class=\"slide slide-1\" style=\"background-image:url(".$slide1 
-			.");\"></div>";
-	}
-	if (of_get_option('slide2', 'no entry') != ""){
-		echo "<div class=\"slide slide-2\" style=\"background-image:url(".$slide2 
-			.");\"></div>";
-	}
-	if (of_get_option('slide3', 'no entry') != ""){
-		echo "<div class=\"slide slide-3\" style=\"background-image:url(".$slide3 
-			.");\"></div>";
-	}
-	if (of_get_option('slide4', 'no entry') != ""){
-		echo "<div class=\"slide slide-4\" style=\"background-image:url(".$slide4 
-			.");\"></div>";
-	}
+	// if (of_get_option('slide1', 'no entry') != ""){
+	// 	echo "<div class=\"slide slide-1\" style=\"background-image:url(".$slide1 
+	// 		.");\"></div>";
+	// }
+	// if (of_get_option('slide2', 'no entry') != ""){
+	// 	echo "<div class=\"slide slide-2\" style=\"background-image:url(".$slide2 
+	// 		.");\"></div>";
+	// }
+	// if (of_get_option('slide3', 'no entry') != ""){
+	// 	echo "<div class=\"slide slide-3\" style=\"background-image:url(".$slide3 
+	// 		.");\"></div>";
+	// }
+	// if (of_get_option('slide4', 'no entry') != ""){
+	// 	echo "<div class=\"slide slide-4\" style=\"background-image:url(".$slide4 
+	// 		.");\"></div>";
+	// }
 
-
-
-	?></div><!--slides-->
+?>
+</div><!--slides-->
 
 	  <div class="issue-number"></div>
 	  <div class="availablity">Available Now</div>
