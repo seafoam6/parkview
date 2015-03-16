@@ -147,27 +147,32 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+// create custom plugin settings menu
+add_action('admin_menu', 'prowp_create_menu');
 
+function prowp_create_menu(){
 
-/** Step 2 (from text above). */
-add_action( 'admin_menu', 'parkview_options_menu' );
+	//create new top level menu
+	add_menu_page('Halloween Plugin page', 'Halloween Plugin', 'manage_options', 'prowp_main_menu', 'prowp_settings_page');
 
-/** Step 1. */
-function parkview_options_menu() {
-	add_menu_page( 'Parkview Theme Options', 'Parkview Options', 'manage_options', 'parkview-options', 'parkview_theme_options' );
+	// call register settings function
+	add_action('admin_init', 'prowp_register_settings');
+}
+function prowp_register_settings(){
+	//register our settings
+	register_setting('prowp-settings-group', 'prowp_options', 'prowp_sanitize_options');
 }
 
-/** Step 3. */
-function parkview_theme_options() {
-	if ( !current_user_can( 'manage_options' ) )  {
-		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
-	}
-	include 'theme-options.php';
+function prowp_sanitize_options($input){
+	$input['option_name'] = sanitize_text_field($input['option_name']);
+	$input['option_email'] = sanitize_email($input['option_email']);
+	$input['option_url'] = esc_url($input['option_url']);
+	return input;
 }
-/*
- * Helper function to return the theme option value. If no value has been saved, it returns $default.
- * Needed because options are saved as serialized strings.
- *
- */
 
-
+function prowp_settings_page(){
+	?>
+	<div class="wrap">
+	<h2>Halloween Plugins Options</h2>
+	<form method=""
+}
