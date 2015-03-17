@@ -148,31 +148,65 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 // create custom plugin settings menu
-add_action('admin_menu', 'prowp_create_menu');
+add_action( 'admin_menu', 'parkview_create_menu' );
 
-function prowp_create_menu(){
+function parkview_create_menu() {
 
-	//create new top level menu
-	add_menu_page('Halloween Plugin page', 'Halloween Plugin', 'manage_options', 'prowp_main_menu', 'prowp_settings_page');
+    //create new top-level menu
+    add_menu_page( 'Parkview Options Page', 'Parkview Plugin', 'manage_options', 'parkview_main_menu', 'parkview_settings_page' );
 
-	// call register settings function
-	add_action('admin_init', 'prowp_register_settings');
-}
-function prowp_register_settings(){
-	//register our settings
-	register_setting('prowp-settings-group', 'prowp_options', 'prowp_sanitize_options');
+    //call register settings function
+    add_action( 'admin_init', 'parkview_register_settings' );
+
 }
 
-function prowp_sanitize_options($input){
-	$input['option_name'] = sanitize_text_field($input['option_name']);
-	$input['option_email'] = sanitize_email($input['option_email']);
-	$input['option_url'] = esc_url($input['option_url']);
-	return input;
+function parkview_register_settings() {
+
+    //register our settings
+    register_setting( 'parkview-settings-group', 'parkview_options', 'parkview_sanitize_options' );
+
 }
 
-function prowp_settings_page(){
-	?>
+function parkview_sanitize_options( $input ) {
+
+    $input['option_name']  = sanitize_text_field( $input['option_name'] );
+    $input['option_email'] = sanitize_email( $input['option_email'] );
+    $input['option_url']   = esc_url( $input['option_url'] );
+
+    return $input;
+
+}
+
+function parkview_settings_page() {
+?>
 	<div class="wrap">
-	<h2>Halloween Plugins Options</h2>
-	<form method=""
+	<h2>Halloween Plugin Options</h2>
+
+	<form method="post" action="options.php">
+		<?php settings_fields( 'parkview-settings-group' ); ?>
+		<?php $parkview_options = get_option( 'parkview_options' ); ?>
+		<table class="form-table">
+			<tr valign="top">
+			<th scope="row">Name</th>
+			<td><input type="text" name="parkview_options[option_name]" value="<?php echo esc_attr( $parkview_options['option_name'] ); ?>" /></td>
+			</tr>
+
+			<tr valign="top">
+			<th scope="row">Email</th>
+			<td><input type="text" name="parkview_options[option_email]" value="<?php echo esc_attr( $parkview_options['option_email'] ); ?>" /></td>
+			</tr>
+
+			<tr valign="top">
+			<th scope="row">URL</th>
+			<td><input type="text" name="parkview_options[option_url]" value="<?php echo esc_url( $parkview_options['option_url'] ); ?>" /></td>
+			</tr>
+		</table>
+
+		<p class="submit">
+			<input type="submit" class="button-primary"	value="Save Changes" />
+		</p>
+
+	</form>
+	</div>
+<?php
 }
