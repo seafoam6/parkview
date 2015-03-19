@@ -162,7 +162,8 @@ function parkview_create_menu() {
 
 function parkview_register_settings() {
 
-    //register our settings
+    //register our settings, each setting in a comma delimited set
+		// add more settings here. 
     register_setting( 'parkview-settings-group', 'parkview_options', 'parkview_sanitize_options' );
 
 }
@@ -178,35 +179,8 @@ function parkview_sanitize_options( $input ) {
 }
 
 function parkview_settings_page() {
-?>
-	<div class="wrap">
-	<h2>Halloween Plugin Options</h2>
-
-	<form method="post" action="options.php">
-		<?php settings_fields( 'parkview-settings-group' ); ?>
-		<?php $parkview_options = get_option( 'parkview_options' ); ?>
-		<table class="form-table">
-			<tr valign="top">
-			<th scope="row">Name</th>
-			<td><input type="text" name="parkview_options[option_name]" value="<?php echo esc_attr( $parkview_options['option_name'] ); ?>" /></td>
-			</tr>
-
-			<tr valign="top">
-			<th scope="row">Email</th>
-			<td><input type="text" name="parkview_options[option_email]" value="<?php echo esc_attr( $parkview_options['option_email'] ); ?>" /></td>
-			</tr>
-
-			<tr valign="top">
-			<th scope="row">URL</th>
-			<td><input type="text" name="parkview_options[option_url]" value="<?php echo esc_url( $parkview_options['option_url'] ); ?>" /></td>
-			</tr>
-		</table>
-
-		<p class="submit">
-			<input type="submit" class="button-primary"	value="Save Changes" />
-		</p>
-
-	</form>
-	</div>
-<?php
+	include 'theme-options.php'; 
+}
+if ( is_admin() ) {
+	require_once( get_template_directory() . '/admin/inc/theme-options.php' );
 }
