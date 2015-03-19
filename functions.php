@@ -147,40 +147,6 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-// create custom plugin settings menu
-add_action( 'admin_menu', 'parkview_create_menu' );
-
-function parkview_create_menu() {
-
-    //create new top-level menu
-    add_menu_page( 'Parkview Options Page', 'Parkview Plugin', 'manage_options', 'parkview_main_menu', 'parkview_settings_page' );
-
-    //call register settings function
-    add_action( 'admin_init', 'parkview_register_settings' );
-
-}
-
-function parkview_register_settings() {
-
-    //register our settings, each setting in a comma delimited set
-		// add more settings here. 
-    register_setting( 'parkview-settings-group', 'parkview_options', 'parkview_sanitize_options' );
-
-}
-
-function parkview_sanitize_options( $input ) {
-
-    $input['option_name']  = sanitize_text_field( $input['option_name'] );
-    $input['option_email'] = sanitize_email( $input['option_email'] );
-    $input['option_url']   = esc_url( $input['option_url'] );
-
-    return $input;
-
-}
-
-function parkview_settings_page() {
-	include 'theme-options.php'; 
-}
 if ( is_admin() ) {
 	require_once( get_template_directory() . '/admin/inc/theme-options.php' );
 }
