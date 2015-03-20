@@ -57,34 +57,40 @@ $options[] = array( 'title'   => __( 'Parkview Theme Options', 'textdomain' ), /
 
 $options[] = array( 'title'   => __( 'Home Page Image 1', 'textdomain' ),
           'tab'     => 'options',
-                    'desc'    => __( 'Image upload example.', 'textdomain' ),
+                    'desc'    => __( '', 'textdomain' ),
                     'id'      => $shortname . '_banner1',
                     'std'     => '',
                     'type'    => 'upload' );
 $options[] = array( 'title'   => __( 'Home Page Image 2', 'textdomain' ),
           'tab'     => 'options',
-                    'desc'    => __( 'Image upload example.', 'textdomain' ),
+                    'desc'    => __( '', 'textdomain' ),
                     'id'      => $shortname . '_banner2',
                     'std'     => '',
                     'type'    => 'upload' );
 $options[] = array( 'title'   => __( 'Home Page Image 3', 'textdomain' ),
           'tab'     => 'options',
-                    'desc'    => __( 'Image upload example.', 'textdomain' ),
+                    'desc'    => __( '', 'textdomain' ),
                     'id'      => $shortname . '_banner3',
                     'std'     => '',
                     'type'    => 'upload' );
 $options[] = array( 'title'   => __( 'Home Page Image 4', 'textdomain' ),
           'tab'     => 'options',
-                    'desc'    => __( 'Image upload example.', 'textdomain' ),
+                    'desc'    => __( '', 'textdomain' ),
                     'id'      => $shortname . '_banner4',
                     'std'     => '',
                     'type'    => 'upload' );
 $options[] = array( 'title'   => __( 'Home Page Image 5', 'textdomain' ),
           'tab'     => 'options',
-                    'desc'    => __( 'Image upload example.', 'textdomain' ),
+                    'desc'    => __( '', 'textdomain' ),
                     'id'      => $shortname . '_banner5',
                     'std'     => '',
                     'type'    => 'upload' );
+$options[] = array( 'title'   => __( 'Home page transition speed', 'textdomain' ),
+          'tab'     => 'options',
+                    'desc'    => __( 'In milliseconds (1s = 1000)', 'textdomain' ),
+                    'id'      => $shortname . '_slideTimer',
+                    'std'     => '5000',
+                    'type'    => 'text' );
 
 /*$options[] = array( 'title'   => __( 'Select Example', 'textdomain' ), // title
                     'tab'     => 'options', // tab

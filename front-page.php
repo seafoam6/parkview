@@ -8,7 +8,7 @@
 
 get_header(); ?>
 	<div class="hero">
-	<div class="slides">
+	<div class="slides" data-slidetime="<?php echo get_option('parkview_slideTimer'); ?>">
 
 	<?php 
 	for ($i = 1; $i <= 5; $i++){

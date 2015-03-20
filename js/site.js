@@ -3,12 +3,20 @@
 jQuery(document).ready(function($) {
   //slider
     var slides = $('.hero .slide'),
-        slideTime = 5000,
+        slideTime,
         totalSlides = slides.length -1, 
         currentSlide=0,
         hideOthers =function(){
           $(slides[currentSlide]).siblings().hide();
         };
+
+    //get slide timer
+    if ($('[data-slidetime]')){
+      slideTime = $('[data-slidetime]').data('slidetime');
+    }else{
+      slideTime = 5000;
+    }
+
 
     hideOthers();
 
