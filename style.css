@@ -718,3 +718,12 @@ body {
 
 *:focus {
   outline: 0; }
+
+@media (max-width: 600px) {
+  .overhang {
+    top: 40px; }
+  .issue-number, .availablity {
+    top: 146px; }
+  #about p {
+    padding-left: 15px;
+    padding-right: 15px; } }

@@ -33,7 +33,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section id="about" class="about">
 		    <h2 class="section-head">About</h2>
-		    <?php echo of_get_option('parkview_about_text', 'no entry'); ?>
+		    <p><?php echo get_option('parkview_homePageText'); ?></p>
 		  </section>
 		  <section id="issues">
 		    <h2 class="section-head">Issues</h2>

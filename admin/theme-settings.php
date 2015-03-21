@@ -91,7 +91,12 @@ $options[] = array( 'title'   => __( 'Home page transition speed', 'textdomain' 
                     'id'      => $shortname . '_slideTimer',
                     'std'     => '5000',
                     'type'    => 'text' );
-
+$options[] = array( 'title'   => __( 'Home Page Body Text', 'textdomain' ),
+          'tab'     => 'options',
+                    'desc'    => __( 'This shows up on front page', 'textdomain' ),
+                    'id'      => $shortname . '_homePageText',
+                    'std'     => '',
+                    'type'    => 'textarea' );
 /*$options[] = array( 'title'   => __( 'Select Example', 'textdomain' ), // title
                     'tab'     => 'options', // tab
                     'desc'    => __( 'Select field example.', 'textdomain' ), // optional - description
