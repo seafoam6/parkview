@@ -37,56 +37,33 @@ get_header(); ?>
 		  </section>
 		  <section id="issues">
 		    <h2 class="section-head">Issues</h2>
-		    <!-- // Hardcode
-		    <div class="issue">
-		      <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/issue-thumb-01.jpg" alt="buy parkview issue 1 here">
+				<?php
+					//set find parameters
+					$params = array( 'limit' => -1 );
+					//get pods object
+					$pods = pods( 'issue', $params );
+					//loop through records
+					if ( $pods->total() > 0 ) {
+					while ( $pods->fetch() ) {
+					//Put field values into variables
+					$title = $pods->display('name');
+					$picture = $pods->field('issue_thumbnail');
+					$issue_link = $pods->field('link_to_issue_file');
+					$id = $pods->field('id');
+				?>
+				<?php if ( ! is_null($picture) ) : ?>
+					<div class="issue">
+					<a href="<?php echo $issue_link; ?>">
+						<?php echo wp_get_attachment_image( $picture['ID'], 'full' ); ?>
 					</a>
-		    </div>
-		     // -->
-		    <!-- // PODS Section -->
+					</div>		 
+				<?php else : ?>
+				<?php endif; ?>
+				<?php
+				} //endwhile
+				} //endif
 
-
- 
-<?php
-	//set find parameters
-	$params = array( 'limit' => -1 );
-	//get pods object
-	$pods = pods( 'issue', $params );
-	//loop through records
-	if ( $pods->total() > 0 ) {
-	while ( $pods->fetch() ) {
-	//Put field values into variables
-	$title = $pods->display('name');
-	$picture = $pods->field('issue_thumbnail');
-	$issue_link = $pods->field('link_to_issue_file');
-	$id = $pods->field('id');
-?>
-
-<?php if ( ! is_null($picture) ) : ?>
-
-
-<div class="issue-<?php echo $id; ?>">
-<a href="<?php echo $issue_link; ?>">
-	<?php echo wp_get_attachment_image( $picture['ID'], 'full' ); ?>
-</a>
-</div>
- 
-<?php else : ?>
-
-<?php endif; ?>
-
-
-
-<?php
-} //endwhile
-} //endif
-//do the pagination
-
-?>
-
-
-
-		    <!-- // -->
+				?>
 		  </section>
 		  <section id="contact">
 		    <h2 class="section-head">Contact</h2>

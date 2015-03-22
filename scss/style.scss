@@ -304,6 +304,19 @@ margin: 0 auto;
   }
 }
 *:focus {outline: 0;}
+.issue{
+  float:left;
+  margin:{
+    bottom:20px;
+    //right:20px;
+  }
+  &:nth-child(3n+3){
+    margin:{
+      left:50px;
+      right:50px;
+    }
+  }
+}
 @media (max-width:600px){
   .overhang{
     top:40px;
