@@ -37,16 +37,15 @@ get_header(); ?>
 		  </section>
 		  <section id="issues">
 		    <h2 class="section-head">Issues</h2>
-		    <!-- // Hardcode-->
+		    <!-- // Hardcode
 		    <div class="issue">
 		      <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/issue-thumb-01.jpg" alt="buy parkview issue 1 here">
 					</a>
 		    </div>
-		    <!-- // -->
+		     // -->
 		    <!-- // PODS Section -->
 
-	<div id="primary" class="content-area">
-<div id="content" class="site-content" role="main">
+
  
 <?php
 	//set find parameters
@@ -62,41 +61,29 @@ get_header(); ?>
 	$issue_link = $pods->field('link_to_issue_file');
 	$id = $pods->field('id');
 ?>
-<article>
-<header class="entry-header">
-<?php if ( ! is_null($picture) ) : ?>
-<div class="grid">
 
-<div class="entry-thumbnail">
+<?php if ( ! is_null($picture) ) : ?>
+
+
+<div class="issue-<?php echo $id; ?>">
 <a href="<?php echo $issue_link; ?>">
-<?php echo wp_get_attachment_image( $picture['ID'], 'full' ); ?>
+	<?php echo wp_get_attachment_image( $picture['ID'], 'full' ); ?>
 </a>
 </div>
  
-<div class="col-2third">
-<h1 class="entry-title">
-<a href="<?php echo esc_url( $permalink); ?>" rel="bookmark"><?php _e( $title , 'PP2014' ); ?></a>
-</h1>
-</div>
-</div>
 <?php else : ?>
-<h1 class="entry-title">
-<a href="<?php echo $permalink; ?>" rel="bookmark"><?php echo $title; ?></a>
-</h1>
+
 <?php endif; ?>
-</header><!-- .entry-header -->
-<div class="entry-content">
-<a href="<?php echo $permalink; ?>" rel="bookmark" class="button primary">Read More</a>
-</div><!-- .entry-content -->
-</article><!-- #post -->
+
+
+
 <?php
 } //endwhile
 } //endif
 //do the pagination
-echo $pods->pagination( array( 'type' => 'advanced' ) );
+
 ?>
-</div><!-- #content -->
-</div><!-- #primary --> 
+
 
 
 		    <!-- // -->
