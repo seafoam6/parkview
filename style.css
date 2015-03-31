@@ -714,6 +714,8 @@ body {
     .social-share a.instagram {
       background-position: right -5px top; }
     .social-share a.facebook {
+      background-position: left 0px top; }
+    .social-share a.twitter {
       background-position: left -50px top; }
 
 *:focus {

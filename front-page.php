@@ -67,7 +67,7 @@ get_header(); ?>
 		  </section>
 		  <section id="contact">
 		    <h2 class="section-head">Contact</h2>
-		    <div class="contact-info"><span class="name">Ashley K. Parks</span><br><a href="mailto:ashkparks@gmail.com">ashkparks@gmail.com</a>
+		    <div class="contact-info"><a href="mailto:ashkparks@gmail.com">ashkparks@gmail.com</a>
 		  </section>
 		  <section id="buy">
 		    <h2 class="section-head">Connect with us</h2>

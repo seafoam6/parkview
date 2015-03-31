@@ -6087,10 +6087,10 @@ jQuery(document).ready(function($) {
         };
 
     //get slide timer
-    if $('[data-slidetime]'){
-      alert($('[data-slidetime]').data('slidetime'));
+    if ($('[data-slidetime]')){
+      slideTime = $('[data-slidetime]').data('slidetime');
     }else{
-      alert('nope');
+      slideTime = 5000;
     }
 
 
@@ -6136,6 +6136,20 @@ var re = /Parkview Magazine/gi;
     var newText = str.replace(re,switchTo );
 
     $('#about').html(newText);
+});
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 })();
 ( function() {
