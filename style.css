@@ -681,6 +681,17 @@ body {
   position: relative;
   left: 11px; }
 
+.contact-email {
+  position: relative; }
+  .contact-email:before {
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-image: url(images/author-florish.jpg); }
+
 .contact-info {
   font-family: 'Linotype Didot', serif;
   font-style: italic;
@@ -723,7 +734,11 @@ body {
 
 .issue {
   float: left;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  /* remove 3 rules below at 2nd issue */
+  margin: 0px auto -7px;
+  display: table;
+  float: none; }
   .issue:nth-child(3n+3) {
     margin-left: 50px;
     margin-right: 50px; }

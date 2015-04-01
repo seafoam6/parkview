@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 var re = /Parkview Magazine/gi;
     var str = $('#about').html();
     
-    var switchTo = '<span class=\"namesake\">Pakview Magazine</span>';
+    var switchTo = '<span class=\"namesake\">Parkview Magazine</span>';
 
     var newText = str.replace(re,switchTo );
 

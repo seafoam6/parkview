@@ -257,6 +257,20 @@ position: relative;
   position: relative;
   left: 11px;
 }
+.contact-email{
+  position:relative;
+  &:before{
+    position:absolute;
+    top: -10px;
+    left: -40px;
+    content:"";
+    height:30px;
+    width:30px;
+    background:{
+      image:url(images/author-florish.jpg);
+    }
+  }
+}
 .contact-info{
   font-family: $didot-roman;
   font-style:italic;
@@ -313,6 +327,10 @@ margin: 0 auto;
     bottom:20px;
     //right:20px;
   }
+  /* remove 3 rules below at 2nd issue */
+  margin: 0px auto -7px;
+  display: table;
+  float: none;
   &:nth-child(3n+3){
     margin:{
       left:50px;

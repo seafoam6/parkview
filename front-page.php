@@ -33,6 +33,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section id="about" class="about">
 		    <h2 class="section-head">About</h2>
+		    		    <img class="leaf-flourish" src="<?php bloginfo('template_directory');?>/images/copy-florish.jpg">
 		    <p><?php echo get_option('parkview_homePageText'); ?></p>
 		  </section>
 		  <section id="issues">
@@ -67,7 +68,7 @@ get_header(); ?>
 		  </section>
 		  <section id="contact">
 		    <h2 class="section-head">Contact</h2>
-		    <div class="contact-info"><a href="mailto:ashkparks@gmail.com">ashkparks@gmail.com</a>
+		    <div class="contact-info"><a class="contact-email" href="mailto:info@gmail.com">info@gmail.com</a>
 		  </section>
 		  <section id="buy">
 		    <h2 class="section-head">Connect with us</h2>
