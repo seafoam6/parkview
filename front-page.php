@@ -68,7 +68,7 @@ get_header(); ?>
 		  </section>
 		  <section id="contact">
 		    <h2 class="section-head">Contact</h2>
-		    <div class="contact-info"><a class="contact-email" href="mailto:info@gmail.com">info@gmail.com</a>
+		    <div class="contact-info"><a class="contact-email" href="mailto:info@gmail.com">info@parkviewmag.com</a>
 		  </section>
 		  <section id="buy">
 		    <h2 class="section-head">Connect with us</h2>
