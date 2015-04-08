@@ -9,14 +9,20 @@
 get_header(); ?>
 	<div class="hero">
 	<div class="slides" data-slidetime="<?php echo get_option('parkview_slideTimer'); ?>">
+
 	<?php 
-		for ($i = 1; $i <= 5; $i++){
-			if (get_option('parkview_banner'.$i) != ""){
-				echo "<div class=\"slide slide-".$i."\" style=\"background-image:url(".get_option('parkview_banner'.$i).");\"></div>";
-			}
+	for ($i = 1; $i <= 5; $i++){
+		if (get_option('parkview_banner'.$i) != ""){
+			echo "<div class=\"slide slide-".$i."\" style=\"background-image:url(".get_option('parkview_banner'.$i).");\"></div>";
 		}
-	?>
-	</div><!--slides-->
+	}
+
+	
+
+
+?>
+</div><!--slides-->
+
 	  <div class="issue-number"></div>
 	  <div class="availablity">Available Now</div>
 	  <div class="name-wrap">
@@ -25,10 +31,8 @@ get_header(); ?>
 	</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section class="about">
-			<div id="about"></div>
+			<section id="about" class="about">
 		    <h2 class="section-head">About</h2>
-		    		    <img class="leaf-flourish" src="<?php bloginfo('template_directory');?>/images/copy-florish.jpg">
 		    <p><?php echo get_option('parkview_homePageText'); ?></p>
 		  </section>
 		  <section id="issues">
@@ -63,7 +67,7 @@ get_header(); ?>
 		  </section>
 		  <section id="contact">
 		    <h2 class="section-head">Contact</h2>
-		    <div class="contact-info"><a class="contact-email" href="mailto:info@gmail.com">info@parkviewmag.com</a>
+		    <div class="contact-info"><a href="mailto:ashkparks@gmail.com">ashkparks@gmail.com</a>
 		  </section>
 		  <section id="buy">
 		    <h2 class="section-head">Connect with us</h2>
