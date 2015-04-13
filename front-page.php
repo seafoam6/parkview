@@ -23,8 +23,10 @@ get_header(); ?>
 ?>
 </div><!--slides-->
 
-	  <div class="issue-number"></div>
-	  <div class="availablity">Available Now</div>
+	  <div class="gen-info">
+		  <div class="issue-number"></div>
+		  <div class="availablity">Available Now</div>
+	  </div>
 	  <div class="name-wrap">
 	  	<img src="<?php bloginfo('template_directory');?>/images/logo-trans.png">
 	  	</div>
