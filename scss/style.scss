@@ -170,6 +170,10 @@ body{
   position: relative;
   z-index: 10;
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
 }
 .overhang{
   z-index: 2;
@@ -258,6 +262,7 @@ position: relative;
   width:100%;
   top:0;
   z-index: 25;
+  padding-top: 50px;
 }
 .issue-number{
   margin:0px auto 20px;
