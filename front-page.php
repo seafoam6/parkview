@@ -24,8 +24,9 @@ get_header(); ?>
 </div><!--slides-->
 
 	  <div class="gen-info">
-		  <div class="issue-number"></div>
-		  <div class="availablity">Available Now</div>
+
+		  <a href="http://issuu.com/parkviewmag/docs/parkviewissueno1"><div class="issue-number"></div></a>
+		  <a href="http://issuu.com/parkviewmag/docs/parkviewissueno1"><div class="availablity">Available Now</div></a>
 	  </div>
 	  <div class="name-wrap">
 	  	<img src="<?php bloginfo('template_directory');?>/images/logo-trans.png">
@@ -33,7 +34,8 @@ get_header(); ?>
 	</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section id="about" class="about">
+			<section class="about">
+			<div id="about"></div>
 		    <h2 class="section-head">About</h2>
 		    		    <img class="leaf-flourish" src="<?php bloginfo('template_directory');?>/images/copy-florish.jpg">
 		    <p><?php echo get_option('parkview_homePageText'); ?></p>

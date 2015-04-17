@@ -166,25 +166,44 @@ and Blueprint http://www.blueprintcss.org/
 body{
   background:#fff;
 }
+#page{
+  z-index: 1;
+  position:relative;
+}
+.site-header{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 100;
+}
 .main-navigation{
   position: relative;
   z-index: 10;
   overflow: hidden;
-  position: fixed;
+  
   width: 100%;
   background-color: #fff;
   top: 0;
 }
 .overhang{
-  z-index: 2;
+  z-index: 11;
 position: relative;
+ top:40px;
+  @media (min-width:1000px) { 
+    top:0;
+  }
 }
+
+
 .site-branding img{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+
 }
 .hero{
   //top: 128px;
@@ -262,7 +281,15 @@ position: relative;
   width:100%;
   top:0;
   z-index: 25;
+  padding-top:90px;
+  @media (min-width: 1000px){
   padding-top: 50px;
+  }
+}
+@mixin pointer{
+  &:hover{
+  cursor:pointer;
+}
 }
 .issue-number{
   margin:0px auto 20px;
@@ -272,6 +299,7 @@ position: relative;
   z-index: 5;
   top:146px;
   position: relative;
+  @include pointer;
   background:{
     image:url(images/issue-1.jpg);
     position:center center;
@@ -281,10 +309,15 @@ position: relative;
     display: block;
   }
 }
+.gen-info a{
+  text-decoration:none;
+
+}
 .availablity{
   display:block;
   z-index: 5;
   position: relative;
+  @include pointer;
   width:300px;
   background-color:rgba(#fff,0.8);
   line-height:50px;
@@ -293,6 +326,9 @@ position: relative;
   text-transform: uppercase;
   top:146px;
   display:none;
+  color: #333;
+  text-decoration:none;
+  letter-spacing: 6px; 
    @media (min-width: $screen-sm-min) { 
     top:106px;
     display:block;
@@ -320,14 +356,23 @@ position: relative;
 .namesake{
   font-family:$didot-roman;
 }
-#about p{
-  font-family: $didot-roman;
-  font-style:italic;
-  font-size: 22px;
-  line-height: 28px;
-  .namesake{
-    text-transform: uppercase;
-    font-style: normal;
+.about {
+  position:relative;
+  #about{
+    position:absolute;
+    height:0;
+    width:100%;
+    top:-55px;
+  }
+    p{
+    font-family: $didot-roman;
+    font-style:italic;
+    font-size: 22px;
+    line-height: 28px;
+    .namesake{
+      text-transform: uppercase;
+      font-style: normal;
+    }
   }
 }
 
@@ -449,9 +494,4 @@ margin: 0 auto;
     }
   }
 }
-.overhang{
-  top:40px;
-  @media (min-width: $screen-sm-min) { 
-    top:0;
-  }
-}
+

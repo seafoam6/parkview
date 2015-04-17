@@ -53,13 +53,13 @@ jQuery(document).ready(function($) {
   $=jQuery;
 jQuery(document).ready(function($) {
 var re = /Parkview Magazine/gi;
-    var str = $('#about').html();
+    var str = $('.about').html();
     
     var switchTo = '<span class=\"namesake\">Parkview Magazine</span>';
 
     var newText = str.replace(re,switchTo );
 
-    $('#about').html(newText);
+    $('.about').html(newText);
 });
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
