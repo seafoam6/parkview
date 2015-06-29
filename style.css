@@ -3407,7 +3407,7 @@ body {
   z-index: 5;
   top: 146px;
   position: relative;
-  background-image: url(images/issue-1.jpg);
+  background-image: url(images/issue-2.jpg);
   background-position: center center; }
   .issue-number:hover {
     cursor: pointer; }
@@ -3560,12 +3560,16 @@ p {
   outline: 0; }
 
 .issue {
-  float: left;
-  margin-bottom: 20px;
-  /* remove 3 rules below at 2nd issue */
-  margin: 0px auto -7px;
+  float: none;
+  margin: 0px 25px 20px;
   display: table;
-  float: none; }
-  .issue:nth-child(3n+3) {
-    margin-left: 50px;
-    margin-right: 50px; }
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */ }
+  @media (min-width: 480px) { }
+  @media (min-width: 672px) {
+    .issue {
+      float: left;
+      margin: 0px 99px 20px 0px; } }
+  @media (min-width: 992px) { }
+  @media (min-width: 1200px) { }

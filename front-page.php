@@ -25,8 +25,8 @@ get_header(); ?>
 
 	  <div class="gen-info">
 
-		  <a href="http://issuu.com/parkviewmag/docs/parkviewissueno1"><div class="issue-number"></div></a>
-		  <a href="http://issuu.com/parkviewmag/docs/parkviewissueno1"><div class="availablity">Available Now</div></a>
+		  <a href="http://issuu.com/parkviewmag/docs/parkviewissueno2"><div class="issue-number"></div></a>
+		  <a href="http://issuu.com/parkviewmag/docs/parkviewissueno2"><div class="availablity">Available Now</div></a>
 	  </div>
 	  <div class="name-wrap">
 	  	<img src="<?php bloginfo('template_directory');?>/images/logo-trans.png">
