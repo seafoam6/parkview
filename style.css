@@ -3561,7 +3561,7 @@ p {
 
 .issue {
   float: none;
-  margin: 0px 25px 20px;
+  margin: 0px auto 20px;
   display: table;
   /* Small devices (tablets, 768px and up) */
   /* Medium devices (desktops, 992px and up) */

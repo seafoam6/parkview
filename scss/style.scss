@@ -479,10 +479,10 @@ margin: 0 auto;
 *:focus {outline: 0;}
 .issue{
   float:none;
-  margin: 0px 25px 20px;
+  margin: 0px auto 20px;
   display: table;
   @media (min-width: $screen-xs-min) { 
-
+    //margin: 0px 25px 20px;
   }
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 672px) { 
