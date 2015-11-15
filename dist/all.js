@@ -6087,10 +6087,10 @@ jQuery(document).ready(function($) {
         };
 
     //get slide timer
-    if ($('[data-slidetime]')){
-      slideTime = $('[data-slidetime]').data('slidetime');
+    if $('[data-slidetime]'){
+      alert($('[data-slidetime]').data('slidetime'));
     }else{
-      slideTime = 5000;
+      alert('nope');
     }
 
 
@@ -6129,27 +6129,13 @@ jQuery(document).ready(function($) {
   $=jQuery;
 jQuery(document).ready(function($) {
 var re = /Parkview Magazine/gi;
-    var str = $('.about').html();
+    var str = $('#about').html();
     
-    var switchTo = '<span class=\"namesake\">Parkview Magazine</span>';
+    var switchTo = '<span class=\"namesake\">Pakview Magazine</span>';
 
     var newText = str.replace(re,switchTo );
 
-    $('.about').html(newText);
-});
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+    $('#about').html(newText);
 });
 })();
 ( function() {

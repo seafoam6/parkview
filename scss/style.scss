@@ -107,57 +107,6 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 @import "media/media";
 
-// Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
-
-// Reset and dependencies
-@import "bootstrap/normalize";
-@import "bootstrap/print";
-@import "bootstrap/glyphicons";
-
-// Core CSS
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
-
-// Components
-// @import "bootstrap/component-animations";
-// @import "bootstrap/dropdowns";
-// @import "bootstrap/button-groups";
-// @import "bootstrap/input-groups";
-// @import "bootstrap/navs";
-// @import "bootstrap/navbar";
-// @import "bootstrap/breadcrumbs";
-// @import "bootstrap/pagination";
-// @import "bootstrap/pager";
-// @import "bootstrap/labels";
-// @import "bootstrap/badges";
-// @import "bootstrap/jumbotron";
-// @import "bootstrap/thumbnails";
-// @import "bootstrap/alerts";
-// @import "bootstrap/progress-bars";
-// @import "bootstrap/media";
-// @import "bootstrap/list-group";
-// @import "bootstrap/panels";
-// @import "bootstrap/responsive-embed";
-// @import "bootstrap/wells";
-// @import "bootstrap/close";
-
-// Components w/ JavaScript
-// @import "bootstrap/modals";
-// @import "bootstrap/tooltip";
-// @import "bootstrap/popovers";
-// @import "bootstrap/carousel";
-
-// Utility classes
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
-
 *,
 *:before,
 *:after{
@@ -166,173 +115,90 @@ and Blueprint http://www.blueprintcss.org/
 body{
   background:#fff;
 }
-#page{
-  z-index: 1;
-  position:relative;
-}
-.site-header{
-  position:fixed;
-  width:100%;
-  top:0;
-  left:0;
-  right:0;
-  z-index: 100;
-}
 .main-navigation{
   position: relative;
   z-index: 10;
-  overflow: hidden;
-  
-  width: 100%;
-  background-color: #fff;
-  top: 0;
 }
 .overhang{
-  z-index: 11;
+  z-index: 2;
 position: relative;
- top:40px;
-  @media (min-width:1000px) { 
-    top:0;
-  }
 }
-
-
 .site-branding img{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-
 }
 .hero{
-  //top: 128px;
+  max-width:1980px;
   margin:0 auto;
   position:relative;
   z-index: 1;
   max-width:1980px;
-  height: 350px;
-  top: 65px;
-  @media (min-width: $screen-xs-min) { 
-    top:0;
-  }
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: $screen-sm-min) { 
-    top:0;
-    height: 968px;
-    width:auto;
-    max-width:1980px;
-  }
-
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: $screen-md-min) {
-    
-   }
-
-  /* Large devices (large desktops, 1200px and up) */
-  @media (min-width: $screen-lg-min) {
-    width:auto;
-    max-width:1980px;
-    height:968px;
-  }
+  height:968px;
 }
 .slides{
   position: relative;
   z-index: 2;
-  @extend .clearfix;
-  height:100%;
 }
 .slide{
   width:100%;
   background:{
-    size:480px  242px;
-    position:center center;
+    size:auto, cover;
+    position:center bottom -7px, 
+             center center;
     }
-  height:100%;
+  height:968px;
   position:absolute;
   top:0;
-  @media (min-width: $screen-xs-min) { 
+  &:after{
+    width:467px;
+    height:141px;
+    position:relative;
+    bottom:0;
+    content:"";
     background:{
-      size:960px 484px;
+      image:url(images/logo-trans.png);
     }
   }
-  @media (min-width: $screen-sm-min) { 
-     background:{
-      size:cover;
-    }
-  }
+  //opacity:0;
+  //display:none;
 }
 .name-wrap{
   position:absolute;
   bottom: -7px;
   z-index: 20;
   width:100%;
-  display: none;
-  @media (min-width: $screen-sm-min) { 
-     display: block;
-  }
   img{
     margin:0 auto;
     display: table;
   }
-}
-.gen-info{
-  position:absolute;
-  width:100%;
-  top:0;
-  z-index: 25;
-  padding-top:90px;
-  @media (min-width: 1000px){
-  padding-top: 50px;
-  }
-}
-@mixin pointer{
-  &:hover{
-    cursor:pointer;
-  }
+
 }
 .issue-number{
   margin:0px auto 20px;
   width:300px;
-  display:none;
   height:350px;
   z-index: 5;
-  top:146px;
+  top:106px;
   position: relative;
-  @include pointer;
   background:{
-    image:url(images/issue-2.jpg);
+    image:url(images/issue-1.jpg);
     position:center center;
   }
-  @media (min-width: $screen-sm-min) { 
-    top:106px;
-    display: block;
-  }
-}
-.gen-info a{
-  text-decoration:none;
-
 }
 .availablity{
   display:block;
   z-index: 5;
   position: relative;
-  @include pointer;
   width:300px;
   background-color:rgba(#fff,0.8);
   line-height:50px;
   text-align:center;
   margin:0 auto;
   text-transform: uppercase;
-  top:146px;
-  display:none;
-  color: #333;
-  text-decoration:none;
-  letter-spacing: 6px; 
-   @media (min-width: $screen-sm-min) { 
-    top:106px;
-    display:block;
-  }
+  top:106px;
 }
 .overlay-title{
   width:1270px;
@@ -356,38 +222,20 @@ position: relative;
 .namesake{
   font-family:$didot-roman;
 }
-.about {
-  position:relative;
-  #about{
-    position:absolute;
-    height:0;
-    width:100%;
-    top:-55px;
-  }
-    p{
-    font-family: $didot-roman;
-    font-style:italic;
-    font-size: 22px;
-    line-height: 28px;
-    .namesake{
-      text-transform: uppercase;
-      font-style: normal;
-    }
+#about p{
+  font-family: $didot-roman;
+  font-style:italic;
+  font-size: 22px;
+  line-height: 28px;
+  .namesake{
+    text-transform: uppercase;
+    font-style: normal;
   }
 }
 
 #main > section{
   max-width:982px;
   margin:35px auto;
-}
-p{
- padding:{
-    left:15px;
-    right:15px;
-  }
-  @media (min-width: $screen-sm-min) { 
-    padding:0;
-  }
 }
 .section-head{
   background:{
@@ -402,30 +250,12 @@ p{
   color:#050606;
   font-size:16px;
   margin-bottom:35px;
-  font-family: "Futura Std Book",sans-serif;
 }
 .leaf-flourish{
   float:right;
   padding: 20px 0px 0;
   position: relative;
-  @media (min-width: $screen-md-min) { 
-    left: 11px;
-  }
-  
-}
-.contact-email{
-  position:relative;
-  &:before{
-    position:absolute;
-    top: -10px;
-    left: -40px;
-    content:"";
-    height:30px;
-    width:30px;
-    background:{
-      image:url(images/author-florish.jpg);
-    }
-  }
+  left: 11px;
 }
 .contact-info{
   font-family: $didot-roman;
@@ -469,35 +299,36 @@ margin: 0 auto;
       background-position: right -5px top;
     }
     &.facebook{
-      background-position: left 0px top;
-    }
-    &.twitter{
       background-position: left -50px top;
     }
   }
 }
 *:focus {outline: 0;}
 .issue{
-  float:none;
-  margin: 0px auto 20px;
-  display: table;
-  @media (min-width: $screen-xs-min) { 
-    //margin: 0px 25px 20px;
+  float:left;
+  margin:{
+    bottom:20px;
+    //right:20px;
   }
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: 672px) { 
-      float:left;
-      margin: 0px 99px 20px 0px;
-  }
-  
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: $screen-md-min) {
-    
-   }
-
-  /* Large devices (large desktops, 1200px and up) */
-  @media (min-width: $screen-lg-min) {
-
+  &:nth-child(3n+3){
+    margin:{
+      left:50px;
+      right:50px;
+    }
   }
 }
-
+@media (max-width:600px){
+  .overhang{
+    top:40px;
+  }
+  .issue-number,
+  .availablity{
+    top:146px;
+  }
+  #about p{
+    padding:{
+      left:15px;
+      right:15px;
+    }
+  }
+}
