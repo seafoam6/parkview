@@ -1,0 +1,80 @@
+/*
+Error: Undefined variable: "$color__border-button".
+        on line 6 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/forms/_buttons.scss
+        from line 10 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/forms/_forms.scss
+
+1: button,
+2: input,
+3: select,
+4: textarea {
+5: 	font-size: 100%; /* Corrects font size not being inherited in all browsers *\/
+6: 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome *\/
+7: 	vertical-align: baseline; /* Improves appearance and consistency in all browsers *\/
+8: }
+9: 
+10: @import "buttons";
+11: 
+
+Backtrace:
+/Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/forms/_buttons.scss:6
+/Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/forms/_forms.scss:10
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:88:in `block in with_import'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:88:in `with_import'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:407:in `run'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/bin/scss:13:in `<top (required)>'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `load'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$color__border-button\".\A         on line 6 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/forms/_buttons.scss\A         from line 10 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/forms/_forms.scss\A \A 1: button,\A 2: input,\A 3: select,\A 4: textarea {\A 5: 	font-size: 100%; /* Corrects font size not being inherited in all browsers */\A 6: 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */\A 7: 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */\A 8: }\A 9: \A 10: @import \"buttons\";\A 11: "; }

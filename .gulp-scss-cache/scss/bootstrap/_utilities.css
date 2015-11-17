@@ -1,0 +1,69 @@
+/*
+Error: Undefined mixin 'clearfix'.
+        on line 10 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_utilities.scss, in `clearfix'
+        from line 10 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_utilities.scss
+
+5: 
+6: // Floats
+7: // -------------------------
+8: 
+9: .clearfix {
+10:   @include clearfix;
+11: }
+12: .center-block {
+13:   @include center-block;
+14: }
+15: .pull-right {
+
+Backtrace:
+/Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_utilities.scss:10:in `clearfix'
+/Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_utilities.scss:10
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:98:in `with_mixin'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:407:in `run'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/bin/scss:13:in `<top (required)>'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `load'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'clearfix'.\A         on line 10 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_utilities.scss, in `clearfix'\A         from line 10 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_utilities.scss\A \A 5: \A 6: // Floats\A 7: // -------------------------\A 8: \A 9: .clearfix {\A 10:   @include clearfix;\A 11: }\A 12: .center-block {\A 13:   @include center-block;\A 14: }\A 15: .pull-right {"; }

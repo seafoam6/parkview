@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Futura Std Book';
+  src: url("fonts/FuturaStd-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/FuturaStd-Book.eot?#iefix") format("embedded-opentype"), url("fonts/FuturaStd-Book.woff") format("woff"), url("fonts/FuturaStd-Book.ttf") format("truetype"), url("fonts/FuturaStd-Book.svg#db02aa682b3e193ac55da3558b4b0d6e") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Linotype Didot';
+  src: url("fonts/DidotLH-Roman.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/DidotLH-Roman.eot?#iefix") format("embedded-opentype"), url("fonts/DidotLH-Roman.woff") format("woff"), url("fonts/DidotLH-Roman.ttf") format("truetype"), url("fonts/DidotLH-Roman.svg#8f4f29dacde2cc9e66964c1e29c48804") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Linotype Didot';
+  src: url("fonts/ufonts.com_didot-italic.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/ufonts.com_didot-italic.eot?#iefix") format("embedded-opentype"), url("fonts/ufonts.com_didot-italic.woff") format("woff"), url("fonts/ufonts.com_didot-italic.ttf") format("truetype"), url("fonts/ufonts.com_didot-italic.svg#2f5e15e8bfc5cb886704ec743dae97fb") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400;
+}

@@ -2,14 +2,14 @@ var gulp = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
-var sass = require('gulp-sass');
+var sass = require('gulp-scss');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var rubysass = require('gulp-ruby-sass');
+
 var minifycss = require('gulp-minify-css');
 // Lint Task
 gulp.task('lint', function() {

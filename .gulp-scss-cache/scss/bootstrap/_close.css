@@ -1,0 +1,67 @@
+/*
+Error: Undefined variable: "$font-size-base".
+        on line 8 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_close.scss
+
+3: // --------------------------------------------------
+4: 
+5: 
+6: .close {
+7:   float: right;
+8:   font-size: ($font-size-base * 1.5);
+9:   font-weight: $close-font-weight;
+10:   line-height: 1;
+11:   color: $close-color;
+12:   text-shadow: $close-text-shadow;
+13:   @include opacity(.2);
+
+Backtrace:
+/Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_close.scss:8
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/operation.rb:64:in `_perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:407:in `run'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/bin/scss:13:in `<top (required)>'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `load'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font-size-base\".\A         on line 8 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_close.scss\A \A 3: // --------------------------------------------------\A 4: \A 5: \A 6: .close {\A 7:   float: right;\A 8:   font-size: ($font-size-base * 1.5);\A 9:   font-weight: $close-font-weight;\A 10:   line-height: 1;\A 11:   color: $close-color;\A 12:   text-shadow: $close-text-shadow;\A 13:   @include opacity(.2);"; }

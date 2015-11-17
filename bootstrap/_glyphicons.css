@@ -1,0 +1,81 @@
+/*
+Error: Undefined variable: "$bootstrap-sass-asset-helper".
+        on line 13 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_glyphicons.scss
+
+8: // <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+9: 
+10: // Import the fonts
+11: @font-face {
+12:   font-family: 'Glyphicons Halflings';
+13:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));
+14:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+15:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff2'), '#{$icon-font-path}#{$icon-font-name}.woff2')) format('woff2'),
+16:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),
+17:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),
+18:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+
+Backtrace:
+/Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_glyphicons.scss:13
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `each'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `each'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `_perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `each'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `each'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/funcall.rb:124:in `_perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:501:in `block (2 levels) in visit_directive'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:501:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:501:in `block in visit_directive'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:500:in `visit_directive'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:407:in `run'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Users/steve/.rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/sass-3.4.14/bin/scss:13:in `<top (required)>'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `load'
+/Users/steve/.rvm/gems/ruby-2.1.4/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$bootstrap-sass-asset-helper\".\A         on line 13 of /Applications/AMPPS/www/parkview/wp-content/themes/parkview/scss/bootstrap/_glyphicons.scss\A \A 8: // <a href=\"#\"><span class=\"glyphicon glyphicon-star\"></span> Star</a>\A 9: \A 10: // Import the fonts\A 11: @font-face {\A 12:   font-family: 'Glyphicons Halflings';\A 13:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));\A 14:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),\A 15:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff2'), '#{$icon-font-path}#{$icon-font-name}.woff2')) format('woff2'),\A 16:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),\A 17:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),\A 18:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');"; }

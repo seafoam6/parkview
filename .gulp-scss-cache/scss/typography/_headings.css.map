@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,sBAAuB;EACtB,KAAK,EAAE,IAAI",
+"sources": ["../../../scss/typography/_headings.scss"],
+"names": [],
+"file": "_headings.css"
+}
