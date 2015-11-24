@@ -2,51 +2,42 @@
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-  display: block;
-}
+  display: block; }
 
 .hentry {
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 .byline,
 .updated:not(.published) {
-  display: none;
-}
+  display: none; }
 
 .single .byline,
 .group-blog .byline {
-  display: inline;
-}
+  display: inline; }
 
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
-}
+  margin: 1.5em 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-  display: none;
-}
+  display: none; }
 
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
 .comment-content a {
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 .bypostauthor {
-  display: block;
-}
+  display: block; }
 
 /*# sourceMappingURL=_site.css.map */

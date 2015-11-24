@@ -21,7 +21,7 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src(['scss/**/*.scss'])
-        .pipe(sass({style:'expanded'}))
+        .pipe(sass())
         .pipe(autoprefixer('last 2 version'))
         //.pipe(rename({suffix:'.min'}))
         //.pipe(minifycss())
@@ -41,9 +41,9 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     //livereload.listen();
-    gulp.watch('js/*.js', ['lint', 'scripts']).on('change', livereload.changed);
+    //gulp.watch('js/*.js', ['lint', 'scripts']).on('change', livereload.changed);
     gulp.watch(['scss/**/*.scss' ], ['sass']).on('change', livereload.changed);
-    gulp.watch(['*.php']).on('change', livereload.changed);
+    //gulp.watch(['*.php']).on('change', livereload.changed);
     // gulp.watch('**/*.scss', ['sass']).on('change', livereload.changed);
 });
 

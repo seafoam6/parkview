@@ -1,0 +1,42 @@
+.nav-links {
+  display: none; }
+
+.post {
+  max-width: 982px;
+  margin: 0 auto;
+  padding-top: 100px; }
+
+.category-issue .entry-header {
+  display: none; }
+.category-issue .entry-footer {
+  display: none; }
+
+.super-button {
+  width: 294px;
+  text-shadow: none;
+  background-color: black;
+  color: #fff;
+  box-shadow: none;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  font-weight: bold;
+  float: left;
+  margin: 0 3px; }
+  .super-button:hover {
+    box-shadow: none; }
+
+.entry-meta {
+  display: none; }
+
+.test-aside {
+  width: 300px;
+  float: right;
+  margin-right: 30px; }
+  .test-aside img {
+    border: 1px solid #eee; }
+
+.test-content {
+  width: 600px;
+  float: right; }
+
+/*# sourceMappingURL=_issue.css.map */

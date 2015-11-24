@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,kBAAmB;EAClB,SAAS,EAAE,UAAU;;;AAEtB,aAAc;EACb,OAAO,EAAE,KAAK",
+"mappings": "AAAA,kBAAmB;EAClB,SAAS,EAAE,UAAU;;AAEtB,aAAc;EACb,OAAO,EAAE,KAAK",
 "sources": ["../../../../scss/site/primary/_comments.scss"],
 "names": [],
 "file": "_comments.css"
